@@ -22,3 +22,14 @@ C:\Dev\TODO-AZUREADv2-ASPNETCORE\TodoListService\obj\Debug\netcoreapp2.0\TodoLis
 C:\Dev\TODO-AZUREADv2-ASPNETCORE\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.AssemblyInfo.cs
 C:\Dev\TODO-AZUREADv2-ASPNETCORE\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.dll
 C:\Dev\TODO-AZUREADv2-ASPNETCORE\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.pdb
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\bin\Debug\netcoreapp2.0\TodoListService.deps.json
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\bin\Debug\netcoreapp2.0\TodoListService.runtimeconfig.json
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\bin\Debug\netcoreapp2.0\TodoListService.runtimeconfig.dev.json
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\bin\Debug\netcoreapp2.0\TodoListService.dll
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\bin\Debug\netcoreapp2.0\TodoListService.pdb
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.csproj.CoreCompileInputs.cache
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.AssemblyInfoInputs.cache
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.AssemblyInfo.cs
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.dll
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.pdb

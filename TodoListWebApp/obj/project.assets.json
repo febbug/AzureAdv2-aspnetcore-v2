@@ -12326,7 +12326,7 @@
       ]
     },
     "System.Xml.XmlDocument/4.3.0": {
-      "sha512": "Ms6HpRXAhxzXtDwpRyWPwjqcQwxjZJxqjYsiLSe8X0xmCukJAVUFhgIX4fa7VhtvRGTu4lKZsxPmoksl86B+jg==",
+      "sha512": "lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "type": "package",
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
@@ -12531,34 +12531,29 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.5",
+      "Microsoft.AspNetCore.Server.Kestrel.Https >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\febbug\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\JMRK\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Dev\\TODO-AZUREADv2-ASPNETCORE\\TodoListWebApp\\TodoListWebApp.csproj",
+      "projectUniqueName": "C:\\Dev\\AzureAdv2-aspnetcore-v2\\TodoListWebApp\\TodoListWebApp.csproj",
       "projectName": "TodoListWebApp",
-      "projectPath": "C:\\Dev\\TODO-AZUREADv2-ASPNETCORE\\TodoListWebApp\\TodoListWebApp.csproj",
-      "packagesPath": "C:\\Users\\febbug\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\TODO-AZUREADv2-ASPNETCORE\\TodoListWebApp\\obj\\",
+      "projectPath": "C:\\Dev\\AzureAdv2-aspnetcore-v2\\TodoListWebApp\\TodoListWebApp.csproj",
+      "packagesPath": "C:\\Users\\JMRK\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\AzureAdv2-aspnetcore-v2\\TodoListWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\febbug\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\JMRK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -12584,6 +12579,10 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.5, )"
+          },
+          "Microsoft.AspNetCore.Server.Kestrel.Https": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

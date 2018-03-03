@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Server.Kestrel.Https;
+using System.Net;
 
 namespace WebApp_OpenIDConnect_DotNet
 {
@@ -12,6 +14,15 @@ namespace WebApp_OpenIDConnect_DotNet
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+            .UseKestrel(options=>
+            {
+                options.Listen(IPAddress.Any, 443, listenOptions =>
+                {
+                    listenOptions.UseHttps("localhost_cert.pfx", "8F4TZBFdYKYOBXUU");
+                    
+                });
+            })
+            //.UseUrls("https://*:433")
                 .UseStartup<Startup>()
                 .Build();
     }

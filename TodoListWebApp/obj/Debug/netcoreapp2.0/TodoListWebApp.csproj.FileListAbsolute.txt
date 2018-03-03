@@ -22,3 +22,16 @@ C:\Dev\TODO-AZUREADv2-ASPNETCORE\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoList
 C:\Dev\TODO-AZUREADv2-ASPNETCORE\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.AssemblyInfo.cs
 C:\Dev\TODO-AZUREADv2-ASPNETCORE\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.dll
 C:\Dev\TODO-AZUREADv2-ASPNETCORE\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.pdb
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\bin\Debug\netcoreapp2.0\TodoListWebApp.deps.json
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\bin\Debug\netcoreapp2.0\TodoListWebApp.runtimeconfig.json
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\bin\Debug\netcoreapp2.0\TodoListWebApp.runtimeconfig.dev.json
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\bin\Debug\netcoreapp2.0\TodoListWebApp.dll
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\bin\Debug\netcoreapp2.0\TodoListWebApp.pdb
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.csprojResolveAssemblyReference.cache
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.csproj.CoreCompileInputs.cache
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.AssemblyInfoInputs.cache
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.AssemblyInfo.cs
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.dll
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.pdb
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\bin\Debug\netcoreapp2.0\localhost_cert.pfx
+C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

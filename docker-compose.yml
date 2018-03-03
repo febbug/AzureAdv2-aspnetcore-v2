@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  todolistwebapp:
+    image: todolistwebapp
+    ports:
+      - 443:443
+    build:
+      context: .
+      dockerfile: TodoListWebApp/Dockerfile
+
+  todolistservice:
+    image: todolistservice
+    ports:
+      - 8081:80
+    build:
+      context: .
+      dockerfile: TodoListService/Dockerfile
+
