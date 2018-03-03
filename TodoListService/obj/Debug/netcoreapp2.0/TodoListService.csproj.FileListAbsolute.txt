@@ -33,3 +33,4 @@ C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListS
 C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.AssemblyInfo.cs
 C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.dll
 C:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.pdb
+c:\Dev\AzureAdv2-aspnetcore-v2\TodoListService\obj\Debug\netcoreapp2.0\TodoListService.csprojResolveAssemblyReference.cache

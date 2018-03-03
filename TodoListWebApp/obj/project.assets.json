@@ -12532,6 +12532,7 @@
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.AspNetCore.Server.Kestrel.Https >= 2.0.1",
+      "Microsoft.Extensions.Configuration >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -12583,6 +12584,10 @@
           "Microsoft.AspNetCore.Server.Kestrel.Https": {
             "target": "Package",
             "version": "[2.0.1, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

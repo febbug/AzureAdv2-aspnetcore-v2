@@ -5,13 +5,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using WebApp_OpenIDConnect_DotNet.Models;
 
 namespace WebApp_OpenIDConnect_DotNet.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class HomeController : Controller
     {
+        IConfiguration Configuration { get; set; }
+
+        public HomeController(IConfiguration conf)
+
+        {
+            Configuration = conf;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -35,6 +44,12 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [AllowAnonymous]
+        public IActionResult Config()
+        {
+            return Ok(Configuration["AzureAd:TodoListBaseAddress"]);
         }
     }
 }

@@ -3,13 +3,13 @@ version: '3'
 services:
   todolistwebapp:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Docker
     ports:
-      - "80"
+      - "80:9090"
 
   todolistservice:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Docker
     ports:
-      - "80"
+      - "81:9091"
 

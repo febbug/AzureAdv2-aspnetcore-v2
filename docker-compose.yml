@@ -3,6 +3,8 @@ version: '3'
 services:
   todolistwebapp:
     image: todolistwebapp
+    depends_on:
+      - todolistservice
     ports:
       - 443:443
     build:
