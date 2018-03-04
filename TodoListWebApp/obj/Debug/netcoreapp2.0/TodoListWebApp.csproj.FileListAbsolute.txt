@@ -35,3 +35,4 @@ C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWe
 C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\TodoListWebApp.pdb
 C:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\bin\Debug\netcoreapp2.0\localhost_cert.pfx
 c:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Dev\TODO-AZUREADv2-ASPNETCORE\TodoListWebApp\bin\Debug\netcoreapp2.0\localhost_cert.pfx

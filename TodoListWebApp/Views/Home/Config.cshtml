@@ -1,0 +1,24 @@
+﻿@model System.Collections.IDictionary
+@{
+    ViewData["Title"] = "Config";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Variable Name</th>
+            <th scope="col">Variable Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (System.Collections.DictionaryEntry env in Model)
+        {
+            <tr>
+                <td>@env.Key</td>
+                <td>@env.Value</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -49,7 +49,14 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
         [AllowAnonymous]
         public IActionResult Config()
         {
-            return Ok(Configuration["AzureAd:TodoListBaseAddress"]);
+            //show all environment variables
+            return View(Environment.GetEnvironmentVariables());
+        }
+
+        [AllowAnonymous]
+        public IActionResult ApiConfig()
+        {
+            return Ok(Configuration["CustomSetting"]);
         }
     }
 }

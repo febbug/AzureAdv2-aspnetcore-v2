@@ -34,9 +34,9 @@ namespace WebApp_OpenIDConnect_DotNet
         private static void SetupConfiguration(WebHostBuilderContext ctx, IConfigurationBuilder builder)
         {
 
-            builder.Sources.Clear();
-            builder.AddJsonFile("appsettings.json", false, true)
-                .AddEnvironmentVariables();
+            //builder.Sources.Clear();
+            //builder.AddJsonFile("appsettings.json", false, true)
+            //    .AddEnvironmentVariables();
         }
     }
 }
