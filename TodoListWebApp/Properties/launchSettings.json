@@ -13,7 +13,7 @@
       "launchBrowser": true,
       "launchUrl": "https://localhost:44395/Home/Config",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Jarito"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "TodoListWebApp": {

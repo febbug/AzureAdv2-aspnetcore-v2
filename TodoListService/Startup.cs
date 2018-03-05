@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Globalization;
+using TodoListService.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace TodoListService
 {
@@ -38,6 +40,7 @@ namespace TodoListService
                 o.Authority = "https://login.microsoftonline.com/af558750-d574-4458-973b-c8ef7ee0801a/v2.0";
             });
 
+            services.AddDbContext<TodoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DockerDbConn")));
             services.AddMvc();
         }
 

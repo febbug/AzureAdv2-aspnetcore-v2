@@ -10,12 +10,25 @@ services:
     build:
       context: .
       dockerfile: TodoListWebApp/Dockerfile
-
+  
   todolistservice:
     image: todolistservice
+    depends_on: 
+      - db
     ports:
       - 8081:80
     build:
       context: .
       dockerfile: TodoListService/Dockerfile
 
+  db:
+    image: microsoft/mssql-server-linux:2017-latest
+    container_name: db
+    ports:
+      - 1433:1433
+    environment:
+     SA_PASSWORD: CCCCkKOyJ7yE
+     ACCEPT_EULA: "Y"
+     
+      
+  

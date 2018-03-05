@@ -12,4 +12,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Jarito
     ports:
       - "80"
-
+      
+  db:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Jarito

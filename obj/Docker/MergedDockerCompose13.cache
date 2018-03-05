@@ -1,0 +1,33 @@
+services:
+  db:
+    environment:
+      'ACCEPT_EULA: Y': null
+      ASPNETCORE_ENVIRONMENT: Jarito
+      SA_PASSWORD:%8\&wJKe,E: null
+    image: microsoft/mssql-server-linux:2017-latest
+    ports:
+    - 1433:1433/tcp
+  todolistservice:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListService/Dockerfile
+    depends_on:
+    - db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Jarito
+    image: todolistservice
+    ports:
+    - 8081:80/tcp
+    - 80/tcp
+  todolistwebapp:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListWebApp/Dockerfile
+    depends_on:
+    - todolistservice
+    environment:
+      ASPNETCORE_ENVIRONMENT: Jarito
+    image: todolistwebapp
+    ports:
+    - 443:443/tcp
+version: '3.0'

@@ -1,0 +1,27 @@
+services:
+  db:
+    environment:
+      'ACCEPT_EULA: Y': null
+      SA_PASSWORD:%8\&wJKe,E: null
+    image: microsoft/mssql-server-linux:2017-latest
+    ports:
+    - 1433:1433/tcp
+  todolistservice:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListService/Dockerfile
+    depends_on:
+    - db
+    image: todolistservice
+    ports:
+    - 8081:80/tcp
+  todolistwebapp:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListWebApp/Dockerfile
+    depends_on:
+    - todolistservice
+    image: todolistwebapp
+    ports:
+    - 443:443/tcp
+version: '3.0'

@@ -1,0 +1,63 @@
+services:
+  db:
+    environment:
+      'ACCEPT_EULA: Y': null
+      ASPNETCORE_ENVIRONMENT: Jarito
+      SA_PASSWORD:%8\&wJKe,E: null
+    image: microsoft/mssql-server-linux:2017-latest
+    ports:
+    - 1433:1433/tcp
+  todolistservice:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListService/Dockerfile
+    depends_on:
+    - db
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Jarito
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: todolistservice:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.0/TodoListService.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - 8081:80/tcp
+    - 80/tcp
+    volumes:
+    - c:\Dev\AzureAdv2-aspnetcore-v2\TodoListService:/app:rw
+    - C:\Users\JMRK\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\JMRK\.nuget\packages:/root/.nuget/packages:ro
+  todolistwebapp:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListWebApp/Dockerfile
+    depends_on:
+    - todolistservice
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Jarito
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: todolistwebapp:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.0/TodoListWebApp.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - 443:443/tcp
+    volumes:
+    - c:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp:/app:rw
+    - C:\Users\JMRK\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\JMRK\.nuget\packages:/root/.nuget/packages:ro
+version: '3.0'
