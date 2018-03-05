@@ -56,7 +56,7 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
         [AllowAnonymous]
         public IActionResult ApiConfig()
         {
-            return Ok(Configuration["CustomSetting"]);
+            return Ok(Configuration["AzureAd:TodoListBaseAddress"]);
         }
     }
 }

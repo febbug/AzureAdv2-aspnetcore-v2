@@ -12326,7 +12326,7 @@
       ]
     },
     "System.Xml.XmlDocument/4.3.0": {
-      "sha512": "Ms6HpRXAhxzXtDwpRyWPwjqcQwxjZJxqjYsiLSe8X0xmCukJAVUFhgIX4fa7VhtvRGTu4lKZsxPmoksl86B+jg==",
+      "sha512": "lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "type": "package",
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
@@ -12535,8 +12535,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\febbug\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\JMRK\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12545,20 +12544,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Dev\\TODO-AZUREADv2-ASPNETCORE\\TodoListService\\TodoListService.csproj",
+      "projectUniqueName": "c:\\Dev\\AzureAdv2-aspnetcore-v2\\TodoListService\\TodoListService.csproj",
       "projectName": "TodoListService",
-      "projectPath": "C:\\Dev\\TODO-AZUREADv2-ASPNETCORE\\TodoListService\\TodoListService.csproj",
-      "packagesPath": "C:\\Users\\febbug\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\TODO-AZUREADv2-ASPNETCORE\\TodoListService\\obj\\",
+      "projectPath": "c:\\Dev\\AzureAdv2-aspnetcore-v2\\TodoListService\\TodoListService.csproj",
+      "packagesPath": "C:\\Users\\JMRK\\.nuget\\packages\\",
+      "outputPath": "c:\\Dev\\AzureAdv2-aspnetcore-v2\\TodoListService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\febbug\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\JMRK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

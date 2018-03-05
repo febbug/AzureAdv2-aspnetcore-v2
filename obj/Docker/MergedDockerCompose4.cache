@@ -1,0 +1,50 @@
+services:
+  todolistservice:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListService/Dockerfile
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ;/root/.nuget/fallbackpackages2
+    image: todolistservice:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/fallbackpackages2  bin/Debug/netcoreapp2.0/TodoListService.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - 8081:80/tcp
+    - 81:9091/tcp
+    volumes:
+    - c:\Dev\AzureAdv2-aspnetcore-v2\TodoListService:/app:rw
+    - C:\Users\JMRK\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+  todolistwebapp:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListWebApp/Dockerfile
+    depends_on:
+    - todolistservice
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ;/root/.nuget/fallbackpackages2
+    image: todolistwebapp:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/fallbackpackages2  bin/Debug/netcoreapp2.0/TodoListWebApp.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - 443:443/tcp
+    - 80:9090/tcp
+    volumes:
+    - c:\Dev\AzureAdv2-aspnetcore-v2\TodoListWebApp:/app:rw
+    - C:\Users\JMRK\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+version: '3.0'

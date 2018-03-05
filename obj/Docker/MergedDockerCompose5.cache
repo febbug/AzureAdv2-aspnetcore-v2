@@ -1,0 +1,23 @@
+services:
+  todolistservice:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListService/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+    image: todolistservice
+    ports:
+    - 8081:80/tcp
+    - 80/tcp
+  todolistwebapp:
+    build:
+      context: c:\Dev\AzureAdv2-aspnetcore-v2
+      dockerfile: TodoListWebApp/Dockerfile
+    depends_on:
+    - todolistservice
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+    image: todolistwebapp
+    ports:
+    - 443:443/tcp
+version: '3.0'

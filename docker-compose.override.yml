@@ -3,13 +3,13 @@ version: '3'
 services:
   todolistwebapp:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Docker
+      - ASPNETCORE_ENVIRONMENT=Jarito
     ports:
-      - "80:9090"
+      - "443:443"
 
   todolistservice:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Docker
+      - ASPNETCORE_ENVIRONMENT=Jarito
     ports:
-      - "81:9091"
+      - "80"
 
